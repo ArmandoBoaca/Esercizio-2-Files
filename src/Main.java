@@ -42,6 +42,20 @@ public class Main {
                 System.out.print(vector2[i]+" ");
             }
 
+            int[] sommaV;
+            if (vector1.length > vector2.length){
+                sommaV = new int[vector1.length];
+            } else{
+                sommaV = new int[vector2.length];
+            }
+
+            for (int i = 0; i < sommaV.length; i++) {
+                try {
+                    sommaV[i] = vector1[i] + vector2[i];
+                } catch (Exception e){
+                    
+                }
+            }
         }
 
     }
